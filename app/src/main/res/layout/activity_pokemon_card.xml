@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopokedex2"
+    tools:context=".ui.PokemonCard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pokemongologo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutparent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="80dp"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/layoutimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgDelPokeImageView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/circle_shape">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/nombreDelpokeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Pikachu"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutimage">
+
+                <LinearLayout
+                    android:id="@+id/infoOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/inputs_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tipo"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        android:text="Type:"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/salud"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        android:text="Health:"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/infoTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/infoOne"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/inputs_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ataque"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        android:text="Attack:"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/defensa"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        android:text="Defense:"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/infoThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/infoTwo"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/inputs_background"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/velocidad"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        android:text="Speed:"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/propietario"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        android:text="Owner:"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"></TextView>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/liberarPokeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutinfo"
+                android:layout_centerInParent="true"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#FFC107"
+                android:text="Liberar"
+                android:textColor="#000000">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

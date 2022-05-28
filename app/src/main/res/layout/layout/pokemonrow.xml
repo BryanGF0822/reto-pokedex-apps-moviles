@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/rectangle_radius_shape_card"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layout_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/pokemonImageRow"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_shape"
+            android:foregroundGravity="center"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/pokemonnameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_image"
+        android:background="@drawable/rectangle_shape"
+
+        >
+        <TextView
+            android:id="@+id/pokemonNameRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pokemon name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            >
+        </TextView>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

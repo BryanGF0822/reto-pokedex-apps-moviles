@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "900481223388",
+    "project_id": "pokemogo-e9035",
+    "storage_bucket": "pokemogo-e9035.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900481223388:android:568f3de58153ff38990219",
+        "android_client_info": {
+          "package_name": "com.example.thepokemongo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900481223388-cvlsoi338gkfebeqskkgog30afhm2ets.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKHd8Zu9CzPtXlM670rpRQqtGwPE-wwIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900481223388-cvlsoi338gkfebeqskkgog30afhm2ets.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/circle_shape.xml" value="0.1365" />
+        <entry key="app/src/main/res/drawable/inputs_background.xml" value="0.1365" />
+        <entry key="app/src/main/res/drawable/inputs_background2.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/rectangle_radius_shape.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/rectangle_radius_shape_card.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/rectangle_radius_shape_card2.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/rectangle_radius_shape_card3.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/rectangle_radius_shape_textview.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/rectangle_radius_shape_textview2.xml" value="0.1565" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2887804777725883" />
+        <entry key="app/src/main/res/layout/activity_pokedex.xml" value="0.30284602953040085" />
+        <entry key="app/src/main/res/layout/activity_pokemon_card.xml" value="0.2810763151749321" />
+        <entry key="app/src/main/res/layout/pokemonrow.xml" value="0.41068702290076337" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

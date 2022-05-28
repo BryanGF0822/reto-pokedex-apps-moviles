@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout3"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopokedex"
+    tools:context=".ui.PokedexActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#92000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/bienvenidaPokeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rectangle_radius_shape_textview"
+        android:paddingBottom="10dp"
+        android:text="Hi! let's catch a pokémon!"
+        android:textAlignment="center"
+        android:textColor="#DBE8F3"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/yourpokemonsTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rectangle_radius_shape_textview"
+        android:paddingBottom="10dp"
+        android:text="Tu bolsa:"
+        android:textAlignment="center"
+        android:textColor="#DBE8F3"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienvenidaPokeTextView"></TextView>
+
+    <EditText
+        android:id="@+id/buscaElPokeEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="150dp"
+        android:layout_weight="4"
+        android:background="@drawable/rectangle_radius_shape_card3"
+        android:hint="   Ingresa el nombre de tu poke"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#070707"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/buscarPokeButton"
+        app:layout_constraintStart_toStartOf="@+id/yourpokemonsTV"
+        app:layout_constraintTop_toBottomOf="@+id/yourpokemonsTV"></EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaDePokeRecycleView"
+        android:layout_width="374dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buscaElPokeEditText">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buscarPokeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle_radius_shape_card2"
+        android:text="Buscar"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/yourpokemonsTV"
+        app:layout_constraintStart_toEndOf="@+id/buscaElPokeEditText"
+        app:layout_constraintTop_toBottomOf="@+id/yourpokemonsTV" />
+
+    <TextView
+        android:id="@+id/IngresaPokeNombreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+
+        android:background="@drawable/rectangle_radius_shape_textview2"
+        android:paddingBottom="10dp"
+        android:text="Ingresa el nombre de un poke para capturarlo!"
+        android:textAlignment="center"
+        android:textColor="#DBE8F3"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listaDePokeRecycleView"
+        tools:ignore="NotSibling"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rectangle_radius_shape_card3"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IngresaPokeNombreTextView">
+
+        <EditText
+            android:id="@+id/nombrePokeAtraparEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:hint="Nombre del poke"
+            android:minHeight="48dp"
+            android:textSize="15dp"></EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/atraparPokeButton"
+            android:layout_width="20dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/logoapp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
